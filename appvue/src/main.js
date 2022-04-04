@@ -79,17 +79,3 @@ app.use(dados);
 
 app.mount("#app");
 
-// props: {
-//     acessorios: [
-//       {
-//         id: { type: Number, require: true },
-//         tipo: { type: String, require: true },
-//         nome: { type: String, require: true },
-//         descricao: { type: String, require: false },
-//         qtd: { type: Number, require: true },
-//         dataInclusao: { type: Date, require: true },
-//       },
-//     ],
-//   },
-
-

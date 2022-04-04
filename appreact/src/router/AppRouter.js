@@ -26,13 +26,13 @@ const AppRouter = () => {
                             render={(props) => (
                                 <IncluirAcessorio {...props} acessorios={acessorios} setAcessorios={setAcessorios} />
                             )}
-                            path="/incluir"
+                            path="/incluirReg"
                         />
                         <Route
                             render={(props) => (
                                 <AlterarAcessorio {...props} acessorios={acessorios} setAcessorios={setAcessorios} />
                             )}
-                            path="/alterar/:id"
+                            path="/alterarReg/:id"
                         />
                         <Route component={() => <Redirect to="/" />} />
                     </Switch>

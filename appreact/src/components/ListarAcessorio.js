@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Acessorio from './Acessorio';
 
 const ListarAcessorio = ({ acessorios, setAcessorios }) => {
@@ -11,13 +11,12 @@ const ListarAcessorio = ({ acessorios, setAcessorios }) => {
 
     return (
         <Container>
-            <h2 class="mt-5">Listagem</h2>
-            <Row xs={1} md={2} lg={3} className="g-4">
+            <h2 className="mt-5 text-center">Listagem</h2>
+            <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
+                {/* <Acessorio {...acessorios} excluirReg={excluirReg} /> */}
                 {!_.isEmpty(acessorios) ? (
                         acessorios.map((acessorio) => (
-                            <Col>
                                 <Acessorio  key={acessorio.id} {...acessorio} excluirReg={excluirReg} />
-                            </Col>
                         ))
                     ) : (
                         <p className="message">Nenhum acessorio cadastrado. Por favor, insira um novo acessorio</p>

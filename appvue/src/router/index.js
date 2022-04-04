@@ -4,7 +4,6 @@ import { createRouter, createWebHistory} from "vue-router";
 import IncluirReg from '../views/IncluirReg.vue'
 import ListarReg from '../views/ListarReg.vue'
 import AlterarReg from '../views/AlterarReg.vue'
-import MeuComponente2 from '../views/MeuComponente2.vue'
 // Vue.use(VueRouter)
 
 const routes = [
@@ -23,11 +22,6 @@ const routes = [
         name: 'alterarReg',
         component: AlterarReg
     },
-    {
-        path: '/excluirReg/:id',
-        name: 'excluirReg',
-        component: MeuComponente2
-    }
 ]
 
 const router = createRouter({
